@@ -1,4 +1,4 @@
-﻿$("#btn").click(function () {
+﻿$("#myForm").submit(function () {
     /* declare variables and load values from the form into the variables*/
     var fassignment;
     var fgroupProject;

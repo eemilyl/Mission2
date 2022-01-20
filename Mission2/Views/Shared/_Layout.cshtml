@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+
+    <!--bootstrap and my personal css file -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/default.css" rel="stylesheet" />
+    <!-- flower icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/Flowericon.ico" />
+</head>
+<body>
+
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="Calculator">Calculator</a>
+    </nav>
+    <h2>@ViewData["Header"]</h2>
+    
+    <script src="~/lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+
+    <div>
+        @RenderBody()
+    </div>
+    <footer>Footer</footer>
+
+
+</body>
+</html>
